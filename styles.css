@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Lato;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+}
+
+#app .app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	max-width: 605px;
+	width: 100%;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#app .app .contactForm {
+	border: 1px solid grey;
+	padding: 10px;
+	max-width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#app .app .contactForm input {
+	display: flex;
+	flex-direction: row;
+	width: 250px;
+	margin: 10px;
+}
+
+#app .app .contactForm button {
+	display: flex;
+	justify-content: center;
+	background-color: blue;
+	border-color: lightblue;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: white;
+	width: 120px;
+	height: 30px;
+	margin: 5px 75px;
+}
+
+#app .app .contactsList {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 600px;
+}
+
+#app .app .contactsList .contactItem {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-color: lightgrey;
+	margin-top: 15px;
+	padding: 10px;
+	max-width: 600px;
+	border-radius: 5px;
+}
+
+#app .app .contactsList .contactItem .contactLabel {
+	color: blue;
+	width: 200px;
+	height: 20px;
+	margin-left: 50px;
+	color: grey;
+}
+
+#app .app .contactsList .contactItem .contactEmail {
+	position: absolute;
+	color: blue;
+	width: 250px;
+	top: 40px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 1px;
+	color: gray;
+}
+
+#app .app .contactsList .contactItem img {
+	width: 50px;
+	height: 50px;
+}
